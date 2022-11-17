@@ -1,7 +1,6 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { worker } from 'cluster';
 
 import { Worker, WorkerModel } from '../model/workers';
 import { WorkersService } from '../service/workers.service';
