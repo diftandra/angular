@@ -1,0 +1,116 @@
+{
+  "freelancers": [
+    {
+      "id": 1,
+      "name": "Murphy",
+      "phone": "25565115",
+      "skill": "Angular Developer",
+      "notes": "he has quality to build angular application"
+    },
+    {
+      "id": 2,
+      "name": "Eddie",
+      "phone": "25565115",
+      "skill": "Devops Engineer",
+      "notes": "he has quality to maintain production environment"
+    },
+    {
+      "id": 3,
+      "name": "Ruud van",
+      "phone": "25565115",
+      "skill": "UX Designer",
+      "notes": "he has quality to create excelent UX"
+    },
+    {
+      "id": 4,
+      "name": "Eusebio",
+      "phone": "25565115",
+      "skill": "Angular Developer",
+      "notes": "he has quality to build angular application"
+    },
+    {
+      "id": 5,
+      "name": "Venom",
+      "phone": "25565115",
+      "skill": "Java Developer",
+      "notes": "he has quality to build java application"
+    },
+    {
+      "id": 6,
+      "name": "Richard",
+      "phone": "25565115",
+      "skill": "React Developer",
+      "notes": "he has quality to build react application"
+    },
+    {
+      "name": "Your freelancer name",
+      "phone": "98765543",
+      "skill": "default skill",
+      "notes": "default notes",
+      "id": 7
+    },
+    {
+      "name": "Your freelancer name",
+      "phone": "98765543",
+      "skill": "default skill",
+      "notes": "default notes",
+      "id": 8
+    },
+    {
+      "name": "Your freelancer name",
+      "phone": "98765543",
+      "skill": "default skill",
+      "notes": "default notes",
+      "id": 9
+    },
+    {
+      "name": "Your freelancer name",
+      "phone": "98765543",
+      "skill": "default skill",
+      "notes": "default notes",
+      "id": 10
+    },
+    {
+      "name": "Employee Name",
+      "phone": "123456789",
+      "skill": "none",
+      "notes": "none",
+      "id": 11
+    },
+    {
+      "name": "Employee Name",
+      "phone": "123456789",
+      "skill": "none",
+      "notes": "none",
+      "id": 12
+    },
+    {
+      "name": "Employee Name",
+      "phone": "123456789",
+      "skill": "none",
+      "notes": "none",
+      "id": 13
+    },
+    {
+      "name": "asd",
+      "phone": "12",
+      "skill": "none",
+      "notes": "none",
+      "id": 14
+    },
+    {
+      "name": "ssss",
+      "phone": "123",
+      "skill": "none",
+      "notes": "none",
+      "id": 15
+    },
+    {
+      "name": "Employee Name",
+      "phone": "123456789",
+      "skill": "none",
+      "notes": "none",
+      "id": 16
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+<div class="container">
+    <div [hidden]="submitted">
+      <div>
+        <h1>{{ activity }} Employee</h1>
+      </div>
+  
+      <form (ngSubmit)="onSubmit()" #workerForm="ngForm">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="workerModel.name" name="name" #name="ngModel" required/>
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">Name is required</div>
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text" maxlength="8" (keypress)="validateNo($event)" class="form-control" id="phone" [(ngModel)]="workerModel.phone" name="phone" #phone="ngModel" required/>
+          <div [hidden]="phone.valid || phone.pristine" class="alert alert-danger">Phone is required</div>
+        </div>
+        <div class="form-group">
+          <label>Skill</label>
+          <input type="text" maxlength="50" class="form-control" id="skill" [(ngModel)]="workerModel.skill" name="skill" #skill="ngModel" required/>
+        </div>
+        <div class="form-group">
+          <label>Notes</label>
+          <input type="text" maxlength="100" class="form-control" id="notes" [(ngModel)]="workerModel.notes" name="notes" #notes="ngModel" required/>
+        </div>
+        <button class="btn btn-danger" (click)="goBack()">Cancel</button>
+        <button type="submit" class="btn btn-success" [disabled]="!workerForm.form.valid">Submit</button>
+      </form>
+    </div>
+    <div [hidden]="!submitted">
+      <div class="row">
+        <div class="col-xs-3">Name</div>
+        <div class="col-xs-9">{{ workerModel.name }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">Phone</div>
+        <div class="col-xs-9">{{ workerModel.phone }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">Skill</div>
+        <div class="col-xs-9">{{ workerModel.skill }}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-3">Notes</div>
+        <div class="col-xs-9">{{ workerModel.notes }}</div>
+      </div>
+      <br />
+      <button type="button" class="btn btn-secondary" (click)="submitted = false">Back</button>
+    </div>
+  </div>
+  

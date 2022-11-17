@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem;">
+    <div class="card-body" *ngIf="worker; else second">
+        <h5 class="card-title">{{ worker.name | uppercase }}</h5>
+        <p class="card-text">{{ worker.phone | phone }}</p>
+        <p class="card-text">{{ worker.skill }}</p>
+        <p class="card-text">{{ worker.notes }}</p>
+        <button type="button" class="btn btn-danger" (click)="delete()">Delete</button>
+        <button type="button" class="btn btn-warning" routerLink="/edit/{{ worker.id }}">Edit</button>
+        <button type="button" class="btn btn-light" (click)="goBack()">Back</button>
+  </div>
+</div>
+<ng-template #second>Empty data</ng-template>
+  

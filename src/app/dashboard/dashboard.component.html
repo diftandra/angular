@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <input
+    [(ngModel)]="searchQuery"
+    (keyup)="getWorkers()"
+    placeholder="Search"
+  />
+  <div class="row row-cols-1 row-cols-md-3 g-4" >
+    <div class="col" *ngIf="workers.length > 0; else second">
+      <div class="card" *ngFor="let worker of workers">
+        <div class="card-body">
+          <a routerLink="/detail/{{ worker.id }}">
+          <h5 class="card-title" >{{ worker.name | uppercase }}</h5>
+          <p class="card-text">
+            Tanggal {{ date | date }}
+          </p>
+          <p>
+            Phone <b>{{ worker.phone | phone }}</b>
+          </p>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-outline-primary">
+    <a routerLink="/add">Add Contact</a>
+  </button>
+  <ng-template #second>{{ emptyData }}</ng-template>
+</div>
